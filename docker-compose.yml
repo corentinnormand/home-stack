@@ -27,7 +27,7 @@ services:
       - traefik.http.routers.api.service=api@internal
       - traefik.http.routers.api.rule=Host(`traefik.home`)
   jellyfin:
-    container_name: 'jellyfin'
+    container_name: 'jellyfin:10.9.11'
     image: linuxserver/jellyfin:latest
     networks:
       - traefik
