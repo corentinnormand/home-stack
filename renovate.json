@@ -3,5 +3,12 @@
   "extends": [
     "config:recommended",
     "docker:enableMajor"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["linuxserver/jellyfin"],
+      "versioning": "semver"
+    }
   ]
 }
