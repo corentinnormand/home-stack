@@ -82,7 +82,7 @@ services:
 
   nextcloud_db:
     container_name: nextcloud_db
-    image: postgres:12.20-alpine
+    image: postgres:17.0-alpine
     user: ${CLOUD_SYS_USER}
     environment:
       - POSTGRES_DB=nextcloud
